@@ -37,20 +37,6 @@ jobs:
       - name: Install Node dependencies
         run: npm ci --ignore-scripts
 
-      - name: Download binaries for Windows
-        run: node scripts/download-binaries.cjs
-        env:
-          npm_config_platform: win32
-          npm_config_arch: x64
-
-      - name: Verify binaries exist
-        run: |
-          echo "Binaries directory contents:"
-          dir binaries
-          if (!(Test-Path "binaries\yt-dlp.exe")) { throw "yt-dlp.exe not found!" }
-          if (!(Test-Path "binaries\ffmpeg.exe")) { throw "ffmpeg.exe not found!" }
-        shell: pwsh
-
       - name: Build Tauri app
         run: npm run tauri:build:win
         env:
