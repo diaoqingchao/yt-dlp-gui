@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+src-tauri/target/
+
+# Binaries (downloaded at build time)
+binaries/*.exe
+binaries/ffmpeg
+binaries/ffprobe
+binaries/yt-dlp
+binaries/yt-dlp.exe
+binaries/ffmpeg.exe
+binaries/ffprobe.exe
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

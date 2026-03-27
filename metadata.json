@@ -1,0 +1,5 @@
+{
+  "name": "yt-dlp Desktop GUI",
+  "description": "A desktop GUI for yt-dlp with downloading, packaging, and FFmpeg transcoding features.",
+  "requestFramePermissions": []
+}
